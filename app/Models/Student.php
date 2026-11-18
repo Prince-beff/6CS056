@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
@@ -16,6 +17,13 @@ class Student extends Model
 
     protected function casts(): array
     {
-        return ['date_of_birth' => 'date'];
+        return [
+            'date_of_birth' => 'date',
+        ];
+    }
+
+    protected function age(): Attribute
+    {
+        return Attribute::get(fn () => $this->date_of_birth?->age);
     }
 }

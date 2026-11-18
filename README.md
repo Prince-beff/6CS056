@@ -1,63 +1,58 @@
-# Workshop 1 – Training Institute Management System
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-This is a Laravel starter project containing the Workshop 1 implementation from the supplied handout:
-- Student CRUD
-- Course CRUD
-- MySQL migrations
-- Blade forms and views
-- Server-side validation
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## Important
-This ZIP contains the Laravel application source and configuration, but not Composer's `vendor/` dependencies.
-You need PHP, Composer, MySQL and Node.js installed.
+## About Laravel
 
-## Setup in VS Code / WSL
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-1. Extract this ZIP.
-2. Open the extracted `Workshop1-Laravel` folder in VS Code.
-3. Open the VS Code terminal in that folder.
-4. Install PHP dependencies:
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-   ```bash
-   composer install
-   ```
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-5. Create your environment file:
+## Learning Laravel
 
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-6. Create a MySQL database:
+In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-   ```sql
-   CREATE DATABASE WorkshopDB;
-   ```
+You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
 
-7. Edit `.env` and set your own MySQL username/password:
+## Agentic Development
 
-   ```env
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=WorkshopDB
-   DB_USERNAME=root
-   DB_PASSWORD=
-   ```
+Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
 
-8. Run migrations and start Laravel:
+```bash
+composer require laravel/boost --dev
 
-   ```bash
-   php artisan migrate
-   php artisan serve
-   ```
+php artisan boost:install
+```
 
-9. Visit:
-   - http://127.0.0.1:8000/students
-   - http://127.0.0.1:8000/courses
+Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
 
-## Notes
-- Do not upload your real `.env` file or database password to GitHub.
-- The many-to-many Student–Course relationship is intentionally not implemented in Workshop 1; the handout says it will be added in a later workshop.
-- The `difficulty` field accepts `Easy`, `Medium`, or `Hard`.
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
